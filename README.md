@@ -1,12 +1,15 @@
-# Professional-README-Generator
-A command-line application that dynamically generates a professional READ.md file from a user's input using Inquirer.
+# PLEASE READ ME
+
+## Description
+
+Ever needed a quality README file on the fly for your everyday work? Well this application fulfills exactly that. Using the Inquirer package, you can easily input whatever information neccesary for your application right in the command-line! 
 
 ## User Story
 
 ```md
 AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+I WANT to worry less about my README
+SO THAT I can focus more on my application
 ```
 
 ## Acceptance Criteria
@@ -28,27 +31,7 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
-## Acceptance Criteria Simplified
+## Installation
 
-This project involves creating a script that asks the user some questions, then generates a README file, using their answers to fill out a template. The README should be written to a file.
+## Usage
 
-* Must use the inquirer module for asking questions of the user
-* Must ask the user for the following info:
-	* Title
-	* Description
-	* Installation instructions
-	* Usage information
-	* Contribution guidelines
-	* Testing instructions
-	* License (must be chosen from a list)
-	* Github username
-	* Email
-* The readme template must include:
-	* A table of contents
-	* A section titled "Questions", which has the user's github profile, as well as instructions of how to reach them at their email
-	* A section titled "Description, Installation, Usage, Contributing, and Tests", which contains related answers.
-	* A title section, which has the title the user entered
-	* The readme should follow the structure outlined in the professional readme guide, linked above
-	* A badge associated with the license.
-* The readme must be written to a file when the program is completed.
-* The readme template should either be generated using a template literal, or by reading a template file.
