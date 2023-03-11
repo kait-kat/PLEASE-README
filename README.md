@@ -20,12 +20,25 @@ WHEN I receive prompts regarding my application
 THEN I am able to input all the data relevant to my application
 WHEN I give my project a title
 THEN it is displayed as the title of the README
-WHEN I fill out the description, installation, usage, license, contribution and tests
+WHEN I fill out the description and features
 THEN the area is filled out with my input
 WHEN I choose a license
 THEN a badge for the license is displayed 
+WHEN I am Finished
+THEN my README.md is generated and saved as a file!
 ```
 ## Installation
 
+Make sure to run npm install to get all proper dependencies!
+
 ## Usage
+
+If you have everything installed correctly, you should be able to just input node index.js into the repositories terminal and it should run like so!
+
+<div style="position:relative;width:fit-content;height:fit-content;">
+            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/UYBFy8ff4v8?utm_source=embed&utm_medium=embed&utm_campaign=watch">
+                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
+            </a>
+            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/UYBFy8ff4v8/embed" width="640" height="360"></iframe>
+        </div>
 
