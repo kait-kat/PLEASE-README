@@ -66,24 +66,25 @@ const questions = [
                 },
               ];
 
-              async function writeToFile(fileName, data) {
+              async function writeToFile(file, data) {
                 try {
-                  await fs.promises.writeFile(path.join(process.cwd(), fileName), data);
-                  console.log(`File written successfully at ${fileName}`);
-                } catch (error) {
-                  console.log(`Error writing file: ${error}`);
+                  await fs.promises.mkdir(path.dirname(file), { recursive: true });
+                  await fs.promises.writeFile(file, data);
+                  console.log(`File saved as ${file}`);
+                } catch (err) {
+                  console.error(err);
                 }
               }
               
               async function init() {
                 try {
-                  const inquirerAnswers = await inquirer.prompt(questions);
-                  console.log("Building your README... Please wait...");
-                  await writeToFile("generated/README.md", generateMarkdown({ ...inquirerAnswers }));
-                } catch (error) {
-                  console.log(`Error generating README: ${error}`);
+                  const answers = await inquirer.prompt(questions);
+                  const markdown = generateMarkdown(answers);
+                  await writeToFile('./generated/README.md', markdown);
+                } catch (err) {
+                  console.error(err);
                 }
-              }
+              }              
               
               init();
               
