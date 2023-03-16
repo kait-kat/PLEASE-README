@@ -36,4 +36,4 @@ Make sure to run npm install to get all proper dependencies!
 If you have everything installed correctly, you should be able to just input node index.js into the repositories terminal and it should run like so!
 The following video demonstrates its functionality!
 
-https://clipchamp.com/watch/UYBFy8ff4v8
+[Demo](https://clipchamp.com/watch/UYBFy8ff4v8)
